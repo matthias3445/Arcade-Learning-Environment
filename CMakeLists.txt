@@ -13,12 +13,12 @@ if(SDL_SUPPORT)
   list(APPEND VCPKG_MANIFEST_FEATURES "sdl")
 endif()
 
-option(BUILD_VECTOR_LIB "Build Vector Interface" OFF)
+option(BUILD_VECTOR_LIB "Build Vector Interface" ON)
 if (BUILD_VECTOR_LIB)
   list(APPEND VCPKG_MANIFEST_FEATURES "vector")
 endif()
 
-option(BUILD_VECTOR_XLA_LIB "Build with Vector XLA Support" OFF)
+option(BUILD_VECTOR_XLA_LIB "Build with Vector XLA Support" ON)
 
 option(BUILD_WASM_LIB "Build WebAssembly Interface" OFF)
 if (BUILD_WASM_LIB)
